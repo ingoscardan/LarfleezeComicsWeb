@@ -1,0 +1,13 @@
+{% extends "ComicCollection/base.html" %}
+
+{% block comics_collection_content %}
+<h2>Publishers</h2>
+
+<div class="table-responsive small">
+    <ul class="list-group list-group-flush">
+        {% for publisher in object_list %}
+            <li class="list-group-item">{{  publisher.publisher_name }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
